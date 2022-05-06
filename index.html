@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A local two-player game" />
+    <meta name="author" content="Mohireza" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pig Game</title>
+  </head>
+  <body>
+    <div class="pop-up hidden">
+      <div class="pop-overlay"></div>
+      <section class="message">
+        <button class="close">&times</button>
+        <h1 class="message-text">PLAYER ONE IS THE WINNER</h1>
+      </section>
+    </div>
+    <div class="absolutes">
+      <div class="new-game">
+        <button class="new">
+          <ion-icon name="refresh-circle-outline"></ion-icon>New Game
+        </button>
+      </div>
+      <img src="" alt="dice" class="dice" />
+      <div class="gameplay">
+        <button class="roll">
+          <ion-icon name="dice-outline"></ion-icon>Roll
+        </button>
+        <button class="hold">
+          <ion-icon name="add-circle-outline"></ion-icon>Hold
+        </button>
+      </div>
+    </div>
+    <section class="p1 player">
+      <div class="p1-overlay overlay hidden"></div>
+      <h2>Player 1</h2>
+      <p class="p1-score score-number">0</p>
+      <div class="p1-current-text current">
+        <p class="current-text">Current</p>
+        <p class="p1-current current-number">0</p>
+      </div>
+    </section>
+    <section class="p2 player">
+      <div class="p2-overlay overlay"></div>
+      <h2>Player 2</h2>
+      <p class="p2-score score-number">0</p>
+      <div class="p2-current-text current">
+        <p class="current-text">Current</p>
+        <p class="p2-current current-number">0</p>
+      </div>
+    </section>
+  </body>
+  <script src="script.js"></script>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+</html>
