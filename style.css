@@ -118,7 +118,6 @@ button:hover {
   margin-block-end: 15rem;
   /* background-color: #fff6f3; */
   padding: 1rem 1.5rem;
-  transform: translateX(-150%);
 }
 .dice {
   visibility: hidden;

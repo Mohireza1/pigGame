@@ -86,8 +86,21 @@ const roller = () => {
 };
 const opener = () => popUp.classList.remove('hidden');
 const closer = () => popUp.classList.add('hidden');
+const newGamer = () => {
+  p1ScoreNumber = 0;
+  p2ScoreNumber = 0;
+  current = 0;
+  p2Overlay.classList.remove('hidden');
+  p1Overlay.classList.add('hidden');
+  p1Score.textContent = String(p1ScoreNumber);
+  p1Current.textContent = String(current);
+  p2Score.textContent = String(p2ScoreNumber);
+  p2Current.textContent = String(current);
+  dice.style.visibility = 'hidden';
+};
 
 roll.addEventListener('click', roller);
 hold.addEventListener('click', holder);
 close.addEventListener('click', closer);
 overlay.addEventListener('click', closer);
+newGame.addEventListener('click', newGamer);
